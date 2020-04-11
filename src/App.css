@@ -1,0 +1,62 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 80px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+ul.gallery {
+  list-style: none;
+}
+ul.gallery li {
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+ul.gallery li .name {
+  color: white;
+  background-color: blueviolet;
+  text-align: center;
+  padding: 10px;
+}
+.search input {
+  font-size: 18px;
+  padding: 5px;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 20px;
+  height: 30px;
+  border-radius: 5px;
+}
+.single-champion {
+  color: #fff;
+  text-shadow: black 2px 2px;
+  height: 50vh;
+}
+.spell {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.spell-text {
+  margin-left: 20px;
+  text-align: left;
+}
