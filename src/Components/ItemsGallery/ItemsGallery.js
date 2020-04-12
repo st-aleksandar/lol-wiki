@@ -13,7 +13,7 @@ const ItemsGallery = props => {
         
         async function getItems() {
             try {
-                const response = await fetch('http://ddragon.leagueoflegends.com/cdn/10.7.1/data/en_US/item.json');
+                const response = await fetch('https://ddragon.leagueoflegends.com/cdn/10.7.1/data/en_US/item.json');
                 const json = await response.json();
                 const items = Object.values(json.data);
                 setItems(items);
