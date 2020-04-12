@@ -11,11 +11,16 @@ class ChampionSingle extends Component {
     }
 
     async componentDidMount() {
-        const id = this.props.match.params.id;
-        const response = await fetch(`https://ddragon.leagueoflegends.com/cdn/10.7.1/data/en_US/champion/${id}.json`);
-        const data = await response.json();
-        const champion = data.data[id];
-        this.setState({ champion });
+        try {
+            const id = this.props.match.params.id;
+            const response = await fetch(`https://ddragon.leagueoflegends.com/cdn/10.7.1/data/en_US/champion/${id}.json`);
+            const data = await response.json();
+            const champion = data.data[id];
+            this.setState({ champion });
+        } catch (error) {
+            console.log(error);
+        }
+        
     }
 
     render() {
