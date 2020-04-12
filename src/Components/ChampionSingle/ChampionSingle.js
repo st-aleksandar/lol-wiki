@@ -12,7 +12,7 @@ class ChampionSingle extends Component {
 
     async componentDidMount() {
         const id = this.props.match.params.id;
-        const response = await fetch(`http://ddragon.leagueoflegends.com/cdn/10.7.1/data/en_US/champion/${id}.json`);
+        const response = await fetch(`https://ddragon.leagueoflegends.com/cdn/10.7.1/data/en_US/champion/${id}.json`);
         const data = await response.json();
         const champion = data.data[id];
         this.setState({ champion });
@@ -26,7 +26,7 @@ class ChampionSingle extends Component {
         const {champion} = this.state;
 
         const singeStyle = {
-            backgroundImage: `url(http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion.name}_0.jpg)`,
+            backgroundImage: `url(https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion.name}_0.jpg)`,
             backgroundSize: 'cover',
             backgroundPosition: 'center'
         };

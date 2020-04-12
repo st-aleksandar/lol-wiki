@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Spell = ({spell}) => {
-    console.log(spell);
     return (
         <div className="spell">
         <img src={`http://ddragon.leagueoflegends.com/cdn/10.7.1/img/spell/${spell.image.full}`}></img>

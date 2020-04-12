@@ -1,9 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link, useParams } from 'react-router-dom';
-import ChampionSingle from '../ChampionSingle/ChampionSingle';
+import { Link } from 'react-router-dom';
 
 const ChampionGallery = (props) => {
-    // const imgUrl = `http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${props.name}_0.jpg`;
     const imgUrl = `http://ddragon.leagueoflegends.com/cdn/10.7.1/img/champion/${props.image}`;
     return (
         <li>

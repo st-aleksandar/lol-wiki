@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  padding: 0 20px;
 }
 
 .App-logo {
@@ -59,4 +60,36 @@ ul.gallery li .name {
 .spell-text {
   margin-left: 20px;
   text-align: left;
+}
+.c-item {
+  display: flex;
+  margin: 0 10px 10px 0;
+}
+.c-item__desc {
+  text-align: left;
+}
+.c-item__desc h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.c-item img {
+  margin-right: 20px;
+  width: 64px;
+  height: 64px;
+}
+.items-gallery .search {
+  margin-bottom: 20px;
+}
+.navigation {
+  list-style: none;
+  color: #fff;
+
+}
+.navigation li {
+  display: inline-block;
+}
+.navigation a {
+  color: #fff;
+  display: inline-block;
+  padding: 5px;
 }
