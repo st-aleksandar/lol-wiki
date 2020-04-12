@@ -32,7 +32,7 @@ class ChampionSingle extends Component {
         const {champion} = this.state;
 
         const singeStyle = {
-            backgroundImage: `url(https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion.name}_0.jpg)`,
+            backgroundImage: `url(https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion.id}_0.jpg)`,
             backgroundSize: 'cover',
             backgroundPosition: 'center'
         };
