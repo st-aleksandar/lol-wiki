@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const ChampionGallery = (props) => {
-    const imgUrl = `http://ddragon.leagueoflegends.com/cdn/10.7.1/img/champion/${props.image}`;
+    const imgUrl = `https://ddragon.leagueoflegends.com/cdn/10.7.1/img/champion/${props.image}`;
     return (
         <li>
             <Link to={`/${props.id}`}>
