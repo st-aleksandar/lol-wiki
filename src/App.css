@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+}
+.App-content {
   padding: 0 20px;
 }
 
@@ -13,6 +15,9 @@
   height: 80px;
   padding: 20px;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .App-intro {
@@ -48,18 +53,38 @@ ul.gallery li .name {
   border-radius: 5px;
 }
 .single-champion {
+  
+}
+.single-champion__header {
   color: #fff;
   text-shadow: black 2px 2px;
-  height: 50vh;
+  padding: 90px;
+  margin: 0 -20px;
+}
+.single-champion h1 {
+  margin-top: 0;
+  padding-top: 1rem;
 }
 .spell {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  margin-bottom: 5px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding: 10px 5px;
+}
+.spell-name {
+  font-weight: bold;
+  font-size: 20px;
 }
 .spell-text {
   margin-left: 20px;
   text-align: left;
+}
+.spell img {
+  width: 64px;
+  height: 64px;
 }
 .c-item {
   display: flex;
@@ -92,4 +117,25 @@ ul.gallery li .name {
   color: #fff;
   display: inline-block;
   padding: 5px;
+}
+.champion-skins {
+  text-align: left;
+}
+.champion-skin {
+  display: inline-block;
+  margin-right: 5px;
+  width: 308px;
+  height: 560px;
+  position: relative;
+}
+
+.champion-skin__name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: blueviolet;
+  color: white;
+  padding: 5px;
+  text-align: center;
 }

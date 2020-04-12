@@ -16,12 +16,14 @@ class App extends Component {
             <h2>League of Legends Wiki</h2>
             <Navigation />
           </div>
+          <div className="App-content">
             <Switch>
               <Route path="/items" component={ItemsGallery} />
               <Route path="/:id" component={ChampionSingle} />
               <Route path="/" component={ChampionsGallery} />
             </Switch>
           </div>
+        </div>
         </BrowserRouter>
     );
   }
